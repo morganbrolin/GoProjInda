@@ -1,0 +1,13 @@
+import unittest
+from go import *
+
+class TestGo(unittest.TestCase):
+    
+
+    def test_switchTurn(self):
+        self.assertEqual(switchTurn("black"),"white")
+        self.assertEqual(switchTurn("white"),"black")
+
+
+if __name__ == '__main__':
+    unittest.main()
